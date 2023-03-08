@@ -1,0 +1,35 @@
+@font-face {
+  font-family: 'Arial-regular';
+  font-style: normal;
+  font-weight: 400;
+  src: url('../fonts/Arial regular.eot'); /* IE9 Compat Modes */
+  src: local(''), url('../fonts/Arial regular.eot?#iefix') format('embedded-opentype'),
+    /* IE6-IE8 */ url('../fonts/Arial regular.woff2') format('woff2'),
+    /* Super Modern Browsers */ url('../fonts/Arial regular.woff') format('woff'),
+    /* Modern Browsers */ url('../fonts/Arial regular.ttf') format('truetype'),
+    /* Safari, Android, iOS */ url('../fonts/Arial regular.svg#OpenSans') format('svg'); /* Legacy iOS */
+}
+
+@font-face {
+  font-family: 'Arial-bold';
+  font-style: normal;
+  font-weight: 700;
+  src: url('../fonts/Arial regular.eot'); /* IE9 Compat Modes */
+  src: local(''), url('../fonts/Arial Bold.eot?#iefix') format('embedded-opentype'),
+    /* IE6-IE8 */ url('../fonts/Arial Bold.woff2') format('woff2'),
+    /* Super Modern Browsers */ url('../fonts/Arial Bold.woff') format('woff'),
+    /* Modern Browsers */ url('../fonts/Arial Bold.ttf') format('truetype'),
+    /* Safari, Android, iOS */ url('../fonts/Arial Bold.svg#OpenSans') format('svg'); /* Legacy iOS */
+}
+
+@font-face {
+  font-family: 'PT-sans-bold';
+  font-style: normal;
+  font-weight: 700;
+  src: url('../fonts/PTSans-Bold.eot'); /* IE9 Compat Modes */
+  src: local(''), url('../fonts/PTSans-Bold.eot?#iefix') format('embedded-opentype'),
+    /* IE6-IE8 */ url('../fonts/PTSans-Bold.woff2') format('woff2'),
+    /* Super Modern Browsers */ url('../fonts/PTSans-Bold.woff') format('woff'),
+    /* Modern Browsers */ url('../fonts/PTSans-Bold.ttf') format('truetype'),
+    /* Safari, Android, iOS */ url('../fonts/PTSans-Bold.svg#OpenSans') format('svg'); /* Legacy iOS */
+}

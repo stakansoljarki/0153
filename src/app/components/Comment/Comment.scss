@@ -1,0 +1,153 @@
+.comment {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+
+  &__header {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 12px;
+  }
+  &__buttons-wrap {
+    margin-right: 15px;
+  }
+  &__button {
+    @include font-style($arial-bold, 16px, $main);
+    border-bottom: 1px solid transparent;
+    transition: ease .3s;
+
+    &:hover {
+      cursor: pointer;
+      border-bottom: 1px solid $main;
+    }
+    &:not(:last-child) {
+      margin-right: 8px;
+    }
+    &--active {
+      $active-color: #005DA1;
+
+      font-family: $arial-regular;
+      color: $active-color;
+      border-color: $active-color;
+      &:hover {
+        border-color: $active-color;
+      }
+    }
+  }
+  &__statistic {
+    display: flex;
+  }
+  &__wrap {
+    @include font-style($arial-regular, 12px, $main);
+
+    display: flex;
+    align-items: center;
+    line-height: 14px;
+    &:not(:last-child) {
+      margin-right: 18px;
+    }
+  }
+  &__like-icon,
+  &__feedback-icon {
+    @include size(12px);
+
+    margin-right: 4px;
+  }
+  &__list {
+    flex: 1;
+    margin-bottom: 20px;
+  }
+  &__list-item {
+    position: relative;
+    &:not(:last-child) {
+      margin-bottom: 16px;
+    }
+  }
+  &__inner {
+    margin-bottom: 12px;
+  }
+  &__author {
+    @include font-style($arial-bold, 14px, $main);
+
+    margin-right: 8px;
+  }
+  &__date {
+    @include font-style($arial-regular, 11px, $secondary);
+  }
+  &__message {
+    $bg-color: #f2fbff;
+    $border-color: #c4cbcf;
+
+    @include font-style($arial-regular, 14px, $main);
+
+    padding: 20px;
+    background-color: $bg-color;
+    border: 1px solid $border-color;
+    box-shadow: 0 4px 10px rgba(128, 128, 128, 0.1);
+    line-height: 19px;
+    text-overflow: ellipsis;
+    overflow: hidden;
+  }
+  &__like-button {
+    position: absolute;
+    right: 5px;
+    bottom: 7px;
+    transition: ease .3s;
+    &:hover {
+      cursor: pointer;
+      transform: scale(1.2);
+    }
+  }
+  &__add-comment {
+    $bg-color: #f2f2f2;
+
+    position: relative;
+    margin: 0 -15px;
+    padding: 28px 20px 34px;
+    background-color: $bg-color;
+  }
+  &__textarea {
+    @include font-style($arial-regular, 14px, $main);
+
+    width: 100%;
+    height: 63px;
+    margin-bottom: 23px;
+    padding: 20px;
+    line-height: 19px;
+    background-color: $white;
+    border: 1px solid $black;
+    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25), 0 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 1px;
+    resize: none;
+  }
+  &__error {
+    $error-color: #ff3040;
+
+    @include font-style($arial-regular, 14px, $error-color);
+
+    position: absolute;
+    top: 8px;
+    left: 20px;
+  }
+  &__btn {
+    $bg-color: #fdd639;
+
+    @include font-style($arial-bold, 16px, $main);
+
+    display: block;
+    width: 100%;
+    max-width: 280px;
+    height: 45px;
+    margin: 0 auto;
+    background-color: $bg-color;
+    border-radius: 23px;
+    cursor: pointer;
+    transition: ease .3s;
+    &:hover {
+      background-color: lighten($bg-color, 10%);
+    }
+    &:focus {
+      background-color: darken($bg-color, 10%);
+    }
+  }
+}

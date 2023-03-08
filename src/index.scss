@@ -1,0 +1,12 @@
+@import 'src/assets/scss/reset';
+@import 'src/assets/scss/fonts';
+@import 'src/assets/scss/colors';
+@import 'src/assets/scss/mixins';
+@import 'src/assets/scss/variables';
+
+//Layout
+@import "app/layout/Profile";
+
+//Components
+@import "app/components/User/User";
+@import "app/components/Comment/Comment";
